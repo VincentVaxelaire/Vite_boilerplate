@@ -29,7 +29,11 @@ Each page of your app should be in `./src/pages/` and follow this template :
 ```
 
 Every internal link should follow this template :
+```html
 <a href="/about" data-navigation>about</a>
+```
 
 Every external link should follow this template :
+```html
 <a href="https://www.google.com" target="_blank">extern link</a>
+```
