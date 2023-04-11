@@ -5,10 +5,13 @@ export function canvas(canvas) {
         const { page } = event.detail;
         if (page === "/") {
             canvas.style.backgroundColor = color[0];
+            canvas.style.transition = "background-color 0.5s ease-in-out";
         } else if (page === "/about") {
             canvas.style.backgroundColor = color[1];
+            canvas.style.transition = "background-color 0.5s ease-in-out";
         } else if (page === "/contact") {
             canvas.style.backgroundColor = color[2];
+            canvas.style.transition = "background-color 0.5s ease-in-out";
         }
     });
 }
