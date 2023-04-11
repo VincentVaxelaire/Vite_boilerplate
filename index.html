@@ -7,26 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="./src/main.js"></script>
   <link rel="stylesheet" href="./src/style.css" />
-  <slot name="head">
-
-  </slot>
+  <slot name="head"></slot>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="/" data-navigation>index</a>
-      <a href="/about" data-navigation>about</a>
-      <a href="/contact" data-navigation>contact</a>
+  <header role="banner">
+    <nav role="navigation">
+      <a href="/index.html" data-navigation>index</a>
+      <a href="/about.html" data-navigation>about</a>
+      <a href="/contact.html" data-navigation>contact</a>
       <a href="https://www.google.com" target="_blank">extern link</a>
     </nav>
   </header>
-  <main>
-    <slot name="main">
-
-    </slot>
+  <main role="main" aria-live="polite">
+    <slot name="main"></slot>
   </main>
-  <footer>
+  <footer role="contentinfo">
     <p>&copy; 2023 My new super 3D app</p>
   </footer>
 </body>
