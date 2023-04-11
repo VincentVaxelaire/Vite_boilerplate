@@ -4,7 +4,7 @@ To run the app clone or fork the project. Then `npm i` in your terminal and then
 
 `./index.html` file is the template file. It's work like a layout file. So you can put all your shared html markup across your pages.
 
-Each page of your app should be in `./src/pages/` and follow this template :
+Each page of your app should be in `./public` folder and follow this template :
 
 ```html
 <!DOCTYPE html>

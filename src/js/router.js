@@ -4,25 +4,12 @@ export const navigateTo = (url) => {
 };
 
 export const router = async () => {
-    // check if is in dev mode
-    const isDev = window.location.hostname === 'localhost';
-
-    const routesDev = [
-        { path: '/', view: './src/pages/index.html' },
-        { path: '/about', view: './src/pages/about.html' },
-        { path: '/contact', view: './src/pages/contact.html' },
-        { path: '/404', view: './src/pages/404.html' },
-    ];
-    
-    const routesProd = [
+    const routes = [
         { path: '/', view: 'index.html' },
         { path: '/about', view: 'about.html' },
         { path: '/contact', view: 'contact.html' },
         { path: '/404', view: '404.html' },
     ];
-
-    // get the routes
-    const routes = isDev ? routesDev : routesProd;
 
     const potentialMatches = routes.map(route => {
         return {
