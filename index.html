@@ -6,29 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="./src/main.js"></script>
-  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="stylesheet" href="./src/global.css" />
   <slot name="head"></slot>
 </head>
 
-<body>
-  <header role="banner">
-    <nav role="navigation">
-      <a href="/" data-navigation>index</a>
-      <a href="/about" data-navigation>about</a>
-      <a href="/contact" data-navigation>contact</a>
-      <a href="https://www.google.com" target="_blank">extern link</a>
-    </nav>
-  </header>
-  <main role="main" aria-live="polite">
-    <slot name="main"></slot>
-  </main>
-  <aside>
-    <!-- global html -->
-    <canvas id="webgl"></canvas>
-  </aside>
-  <footer role="contentinfo">
-    <p>&copy; 2023 My new super 3D app</p>
-  </footer>
+<body id="app" role="main" aria-live="polite">
+  <slot name="main"></slot>
 </body>
-
 </html>

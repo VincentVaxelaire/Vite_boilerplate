@@ -1,3 +1,5 @@
+# /!\ This template works in dev mode but for now the production mode is broken. Still work on it /!\
+
 The app work but you should not use this in production for now !
 
 To run the app clone or fork the project. Then `npm i` in your terminal and then `npm run dev`
