@@ -38,21 +38,10 @@ class Layout {
 }
 
 // Define the NestedLayout class for specific page layouts
-class NestedLayout {
+class NestedLayout extends Layout {
     constructor(htmlFile, showGlobalLayout) {
-        this.htmlFile = htmlFile;
+        super(htmlFile);
         this.showGlobalLayout = showGlobalLayout;
-    }
-
-    loadContent() {
-        // Perform a fetch request to load the HTML content
-        return fetch(this.htmlFile).then((response) => {
-            if (response.ok) {
-                return response.text();
-            } else {
-                throw new Error('Network response was not OK');
-            }
-        });
     }
 
     showGlobal() {
